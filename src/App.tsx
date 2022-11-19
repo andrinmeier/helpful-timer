@@ -22,7 +22,7 @@ export default function Index() {
       if (counter >= 1 && !isStopped) {
           console.log(counter);
           setAudioUrl(`audio/${(counter) * 5}_minutes_remaining.mp3`);
-          setTimeout(() => startPlay(counter - 1), 3000);
+          setTimeout(() => startPlay(counter - 1), 5000 * 60);
       } else {
           console.log("DONE!");
       }
